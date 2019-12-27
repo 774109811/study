@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: prod
+--- #定义环境
+     
+#规则定义:使用yml文件注意层级(缩进) :与值添加空格
+spring:
+  profiles: dev
+server:
+  port: 8093
+  servlet:
+    context-path: / #指定项目发布的路径
+user:
+  id: 10
+  username: 王海
+  age: 100
+--- #定义环境
+#规则定义:使用yml文件注意层级(缩进) :与值添加空格
+spring:
+  profiles: prod
+server:
+  port: 8093
+  servlet:
+    context-path: / #指定项目发布的路径
+user:
+  id: 10
+  username: 王海1
+  age: 100
+  
+  

@@ -1,0 +1,13 @@
+1553226229545	Rename package 'com.jt.sso.config'
+1553226246336	Rename package 'com.jt.sso.pojo'
+1553226253143	Delete element
+1553226273581	Delete element
+1553226276941	Delete element
+1553226282530	Delete element
+1553227004523	Rename resource 'UserMapper.xml'
+1553232902297	Rename package 'com.jt.sso.controller'
+1553232914695	Rename package 'com.jt.sso.service'
+1553232928901	Rename package 'com.jt.sso.util'
+1553232937055	Rename package 'com.jt.sso.vo'
+1553235393195	Copy compilation unit
+1553257958854	Rename resource 'alog4j.properties'

@@ -1,0 +1,32 @@
+package day08_Guess;
+
+import java.util.Scanner;
+
+import day08_练习.GuessGame;
+
+public class GuessNumberGame extends GuessGame {
+
+	@Override
+	public String suiji() {
+		int a =1+new Scanner(System.in).nextInt(500);
+		String s=String.valueOf(a);
+		return s;
+	}
+
+	@Override
+	public void tishi() {
+		System.out.println("已经生成了[1，500）随机整数");
+		System.out.println("按回车继续");
+	}
+
+	@Override
+	public String bijiao(String c, String r) {
+	
+	}
+
+	@Override
+	public boolean caidui(String result) {
+	
+	}
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" uri="file:///E:/software/mvn_repo/com/alibaba/dubbo/2.8.4/dubbo-2.8.4/META-INF/dubbo.xsd"/>
+  <rewriteURI rewritePrefix="http://doc.tedu.cn" uriStartString="http://www.springframework.org"/>
+  <rewriteURI rewritePrefix="http://doc.tedu.cn" uriStartString="http://mybatis.org"/>
+  <rewriteURI rewritePrefix="http://doc.tedu.cn" uriStartString="http://hibernate.sourceforge.net,http://www.hibernate.org"/>
+  <rewriteURI rewritePrefix="http://doc.tedu.cn" uriStartString="http://struts.apache.org"/>
+  <rewriteURI rewritePrefix="http://doc.tedu.cn" uriStartString="http://ibatis.apache.org"/>
+</catalog>

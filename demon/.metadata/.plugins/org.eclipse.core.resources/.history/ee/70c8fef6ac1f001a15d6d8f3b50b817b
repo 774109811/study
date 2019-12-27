@@ -1,0 +1,77 @@
+package singleton.test;
+
+import java.util.ArrayList;
+import java.util.List;
+/**
+ * 类的设计：
+ * 
+ * 1)此类不能在外界直接构建对象：构造方法私有化
+ * 2)此类要对外提供一个对象(有且仅有一个，具备全局唯一性)
+ * 2.1)在类的内部构建对象
+ * 2.2)对外提供一个全局访问点
+ * 
+ * 此种设计一般我们称之为单例设计:(单例模式)
+ * 
+ * 单例模式类型：
+ * 1)懒汉式单例:(对象使用时创建,延迟加载)
+ * a)保证线程安全：
+ * b)优化加锁方式:
+ * 2)饿汉式单例:(对象在类加载时创建)
+ * a)思考对象大小(小对象可在类加时创建，大对象要延迟加载)
+ */
+//饿 加锁性能低 大对象稀少用
+class Singleton1{
+	private Singleton1() {};
+	private static Singleton1 singleton1;
+	public static synchronized Singleton1 get() {
+		if(singleton1==null) {
+			singleton1 = new Singleton1(); 
+		}
+		return singleton1;
+	}
+}
+class Singleton2{
+	private Singleton2() {};
+	private static volatile Singleton2 singleton2;
+	public static synchronized Singleton2 get() {
+		if(singleton2==null) {
+			synchronized(Singleton2.class) {
+				if(singleton2==null) {
+				singleton2 = new Singleton2(); 
+				}
+			}
+		}
+		return singleton2;
+	}
+}
+
+class Singleton3{
+	private Singleton3() {};
+	private static Singleton3 singleton3 = new Singleton3();
+	public static Singleton3 get() {
+		return singleton3;
+	}
+}
+
+public class Singleton {
+	public static void main(String[] args) {
+		doMethod();
+	}
+
+	private static void doMethod() {
+		
+		List<Thread> arrayList = new ArrayList<>();
+		for (int i = 0; i < 20; i++) {
+			Thread thread = new Thread() {
+				@Override
+				public void run() {
+					System.out.println(Singleton2.get());
+				}
+			};
+			arrayList.add(thread);
+		}
+		for (Thread thread : arrayList) {
+			thread.start();
+		}
+	}
+}

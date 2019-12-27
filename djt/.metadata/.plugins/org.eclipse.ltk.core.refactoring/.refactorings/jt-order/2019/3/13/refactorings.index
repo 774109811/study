@@ -1,0 +1,18 @@
+1553487408423	Rename type 'CartController'
+1553487426629	Rename package 'com.jt.cart.config'
+1553487437011	Rename package 'com.jt.cart.mapper'
+1553487446634	Rename package 'com.jt.cart.vo'
+1553487467375	Rename package 'com.jt.cart.controller'
+1553487478733	Rename package 'com.jt.cart.util'
+1553487486146	Rename package 'com.jt.cart.service'
+1553487497599	Rename package 'com.jt.cart.pojo'
+1553487506519	Rename type 'Cart'
+1553487527510	Rename type 'CartMapper'
+1553487534621	Rename type 'CartService'
+1553487542734	Rename type 'CartServiceImpl'
+1553494341281	Delete element
+1553494389127	Copy compilation unit
+1553494427194	Copy compilation unit
+1553499696076	Copy compilation unit
+1553499817524	Copy compilation units
+1553565015683	Delete element

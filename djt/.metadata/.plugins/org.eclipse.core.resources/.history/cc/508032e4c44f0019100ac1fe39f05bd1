@@ -1,0 +1,23 @@
+package jichu.com;
+
+
+
+public class LList {
+	private Node head;
+	private Node tail;
+	private  int size;
+	public void add(Object value) {
+		if(head==null) {
+			
+		}
+		
+	}
+	
+	
+	
+	public class Node{
+		Node prev;
+		Node next;
+		Object value;
+	}
+}

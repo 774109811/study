@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function callAndroid()
+{
+	console.log("callAndroid");
+	//调用java中的phone对象
+	//java webview.addjavaScriptInterface(phone,"androiPhoneObject")
+	window.androidPhoneObject.call();
+}
+</script>
+</head>
+<body>
+<button onclick="callAndroid()">call</button>
+</body>
+</html>
+
+

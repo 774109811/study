@@ -1,0 +1,3 @@
+content-types/org.eclipse.core.runtime.text/file-extensions=jsp
+content-types/org.eclipse.wst.html.core.htmlsource/file-names=KindEditor.jsp,cart.jsp,index.jsp,item.jsp,exception.jsp,my-exception.jsp,order-cart.jsp,success.jsp,item-add.jsp,item-list.jsp,content-category.jsp,item-edit.jsp,login.jsp,my-info-img.jsp,my-info.jsp,my-info-more.jsp,footer-links.jsp,footer.jsp,userList.jsp,header.jsp,shortcut.jsp,content.jsp,content-add.jsp,item-param-add.jsp,item-param-list.jsp,order.jsp,register.jsp,file-upload.jsp,search.jsp
+eclipse.preferences.version=1

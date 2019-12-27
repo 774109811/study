@@ -1,0 +1,31 @@
+package day1702_回声服务;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class EchoServer {//回升服务器
+	public void start() {
+		//启动服务线程
+		new Thread(){//线程子类
+			public void run() {
+				try {
+					//启动服务
+					ServerSocket ss = new ServerSocket(8000);
+					System.out.println("服务启动");
+					while(true){
+					Socket s = ss.accept();//反复等待客户端，阻塞代码和别的代码并行
+					//把socket连接通道交给通信线程取执行通信操作
+					TongXinThread t = new TongXinThread(s);	
+					t.start();
+					}		
+				} catch (Exception e) {
+					System.out.println("服务无法启动，或服务已停止");
+					e.printStackTrace();
+				}
+				
+			};
+			
+		}.start();
+
+	}
+}

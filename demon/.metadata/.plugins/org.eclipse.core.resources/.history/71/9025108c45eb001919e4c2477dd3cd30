@@ -1,0 +1,25 @@
+package shuZuTest;
+
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+
+public class Test {
+	public static void main(String[] args) {
+		String [][] arr =new String[][] {{"1","2"},{"3","4"},{},{}};
+		String [][]arrtrans= new String [arr[0].length][arr.length];
+		  for(int i=0;i<arr.length;i++){
+	        	for(int j=0;j<arr[0].length;j++){
+	        		arrtrans[j][i]=arr[i][j];
+	        	}
+	        }
+		  for(int i=0;i<arrtrans.length;i++){
+	        	for(int j=0;j<arrtrans[0].length;j++){
+	        		System.out.print(arrtrans[i][j]);		
+	        	}
+	        	System.out.println();
+	        }
+	————————————————
+	版权声明：本文为CSDN博主「lhj_sjtu」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+	原文链接：https://blog.csdn.net/weixin_36564655/article/details/79615479
+	}
+}

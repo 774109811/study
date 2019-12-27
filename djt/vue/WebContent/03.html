@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//页面加载完成后执行次函数
+	//定义类
+	function Vue(options) {
+		//获取方法函数
+		var mounted=options.mounted;
+		//加载函数
+		window.onload=mounted;
+	}
+	//var一个函数
+	var options={
+			mounted:function(){
+				console.log("mounted")
+			}
+	}
+	//
+	var vue=new Vue(options);
+<!--
+
+//-->
+</script>
+</html>

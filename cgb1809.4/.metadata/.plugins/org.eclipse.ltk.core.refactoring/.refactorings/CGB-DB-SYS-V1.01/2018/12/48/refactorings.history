@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.db.common.web&apos; to &apos;CGB-DB-SYS-V2.01/src/main/java/com.db.sys.common&apos;&#x0D;&#x0A;- Original project: &apos;CGB-DB-SYS-V1.01&apos;&#x0D;&#x0A;- Destination element: &apos;CGB-DB-SYS-V2.01/src/main/java/com.db.sys.common&apos;&#x0D;&#x0A;- Original element: &apos;CGB-DB-SYS-V1.01/src/main/java/com.db.common.web&apos;" description="Copy package" destination="=CGB-DB-SYS-V2.01/src\/main\/java&lt;com.db.sys.common" element1="/src\/main\/java&lt;com.db.common.web" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1543640989318" version="1.0"/>
+</session>

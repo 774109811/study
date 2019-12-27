@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jt.manage.mapper.ItemMapper">
+
+	<!--查询分页信息 以字段名称用${}
+	查询商品所有信息
+	根据修改时间排序,
+	然后查询起始位值和要查询的条数
+		$ 号没有预编译的效果 字节取值传参
+		# 号预编译的效果,为参数加""号
+	-->
+	<select id="findItemListByPage" resultType="Item">
+		SELECT * FROM tb_item
+		order by updated desc
+		limit #{start},#{rows}
+	</select>
+	<!--批量修改  key=ids value=Long[]-->
+	<update id="updateStatus">
+		update tb_item 
+		set status=#{status},updated=now() 
+		where id in ( <foreach collection="ids" item="id" separator=",">
+		#{id}</foreach>)
+	</update>
+</mapper>

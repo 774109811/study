@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day09_练习.Tansformer&apos; to &apos;Transformer&apos;&#x0D;&#x0A;- Original project: &apos;day09_练习&apos;&#x0D;&#x0A;- Original element: &apos;day09_练习.Tansformer&apos;&#x0D;&#x0A;- Renamed element: &apos;day09_练习.Transformer&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tansformer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day09_练习{Tansformer.java[Tansformer" matchStrategy="1" name="Transformer" qualified="false" references="true" similarDeclarations="false" stamp="1539651486880" textual="false" version="1.0"/>
+</session>

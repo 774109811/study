@@ -1,0 +1,20 @@
+package day08_Guess;
+
+import java.util.Scanner;
+
+import day08_Á·Ï°.GuessGame;
+
+public class Text1 {
+	public static void main(String[] args) {
+		System.out.println("1.²ÂÊý×Ö");
+		System.out.println("2.²Â×ÖÄ¸");
+		System.out.println("Ñ¡Ôñ");
+		int c =new Scanner(System.in).nextInt();
+		Guessgame game=null;
+		switch(c){
+		case 1:game=new GuessNumberGame();break;
+		case 2:game=new GuessLetterGame();break;
+		}
+		game.start();
+	}
+}

@@ -1,0 +1,17 @@
+127.0.0.1 - - [03/Apr/2019:08:31:01 +0800] "GET /index HTTP/1.1" 200 2477 http-bio-8091-exec-1 267
+127.0.0.1 - - [03/Apr/2019:08:31:01 +0800] "GET /js/jquery-easyui-1.4.1/themes/icon.css HTTP/1.1" 200 2504 http-bio-8091-exec-2 30
+127.0.0.1 - - [03/Apr/2019:08:31:01 +0800] "GET /css/jt.css HTTP/1.1" 200 421 http-bio-8091-exec-4 43
+127.0.0.1 - - [03/Apr/2019:08:31:01 +0800] "GET /js/jquery-easyui-1.4.1/themes/default/easyui.css HTTP/1.1" 200 51951 http-bio-8091-exec-3 78
+127.0.0.1 - - [03/Apr/2019:08:31:01 +0800] "GET /js/common.js HTTP/1.1" 200 8355 http-bio-8091-exec-8 58
+127.0.0.1 - - [03/Apr/2019:08:31:01 +0800] "GET /js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js HTTP/1.1" 200 2487 http-bio-8091-exec-7 99
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /js/jquery-easyui-1.4.1/jquery.min.js HTTP/1.1" 200 95786 http-bio-8091-exec-5 216
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /js/jquery-easyui-1.4.1/jquery.easyui.min.js HTTP/1.1" 200 353674 http-bio-8091-exec-6 228
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /js/jquery-easyui-1.4.1/themes/default/images/tabs_icons.png HTTP/1.1" 200 150 http-bio-8091-exec-7 118
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /js/jquery-easyui-1.4.1/themes/default/images/layout_arrows.png HTTP/1.1" 200 319 http-bio-8091-exec-10 134
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /js/jquery-easyui-1.4.1/themes/default/images/blank.gif HTTP/1.1" 200 43 http-bio-8091-exec-5 137
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /js/jquery-easyui-1.4.1/themes/default/images/tree_icons.png HTTP/1.1" 200 3115 http-bio-8091-exec-6 176
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /js/jquery-easyui-1.4.1/themes/default/images/panel_tools.png HTTP/1.1" 200 852 http-bio-8091-exec-8 166
+127.0.0.1 - - [03/Apr/2019:08:31:02 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8091-exec-3 2
+127.0.0.1 - - [03/Apr/2019:08:31:51 +0800] "GET /content/list/9 HTTP/1.0" 200 1951 http-bio-8091-exec-4 556
+0:0:0:0:0:0:0:1 - - [03/Apr/2019:08:31:58 +0800] "GET /web/item/findItemById/562379 HTTP/1.0" 200 429 http-bio-8091-exec-1 50
+127.0.0.1 - - [03/Apr/2019:08:31:58 +0800] "GET /web/item/findItemDescById/562379 HTTP/1.0" 200 11334 http-bio-8091-exec-6 53

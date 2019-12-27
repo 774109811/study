@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;test.java&apos; to &apos;jichu/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;jt-manage&apos;&#x0D;&#x0A;- Destination element: &apos;jichu/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;jt-manage/src/test/java/test.java&apos;" description="Copy package" destination="=jichu/src\/main\/java" element1="/src\/test\/java&lt;test.java" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1554684499529" version="1.0"/>
+</session>

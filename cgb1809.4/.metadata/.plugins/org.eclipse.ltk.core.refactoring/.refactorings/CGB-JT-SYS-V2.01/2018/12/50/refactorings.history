@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IPUtils.java&apos; to &apos;CGB-DB-SYS-V1.01/src/main/java/com.db.common.utils&apos;&#x0D;&#x0A;- Original project: &apos;CGB-JT-SYS-V2.01&apos;&#x0D;&#x0A;- Destination element: &apos;CGB-DB-SYS-V1.01/src/main/java/com.db.common.utils&apos;&#x0D;&#x0A;- Original element: &apos;com.jt.common.util.IPUtils.java&apos;" description="Copy compilation unit" destination="=CGB-DB-SYS-V1.01/src\/main\/java&lt;com.db.common.utils" element1="/src\/main\/java&lt;com.jt.common.util{IPUtils.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1544515240916" units="1" version="1.0"/>
+</session>

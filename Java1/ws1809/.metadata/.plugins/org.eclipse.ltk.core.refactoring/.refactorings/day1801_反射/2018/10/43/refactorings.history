@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;day1840_反射&apos; to &apos;day1801&apos;&#x0D;&#x0A;- Original project: &apos;day1801_反射&apos;&#x0D;&#x0A;- Original element: &apos;day1801_反射/src/day1840_反射&apos;&#x0D;&#x0A;- Renamed element: &apos;day1801_反射/src/day1801&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;day1840_反射&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;day1840_反射" name="day1801" qualified="false" references="true" stamp="1540517238223" textual="false" version="1.0"/>
+</session>

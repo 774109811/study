@@ -1,0 +1,5 @@
+package day08_Îå×ÓÆå;
+
+public class White {
+
+}

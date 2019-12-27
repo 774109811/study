@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day0801.GussGame&apos; to &apos;GuessGame&apos;&#x0D;&#x0A;- Original project: &apos;day0801_猜游戏&apos;&#x0D;&#x0A;- Original element: &apos;day0801.GussGame&apos;&#x0D;&#x0A;- Renamed element: &apos;day0801.GuessGame&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GussGame&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day0801{GussGame.java[GussGame" matchStrategy="1" name="GuessGame" qualified="false" references="true" similarDeclarations="false" stamp="1539308016463" textual="false" version="1.0"/>
+</session>

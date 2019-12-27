@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="vue.js" type="text/javascript"></script>
+</head>
+<!-- 实现实时添加数据和删除数据  -->
+<body>
+	<div id="app">
+	<!-- 自动注入：跟框架要对象或者要个数据 
+	ref:refrence引用，
+	ref属性是由vue处理，vue框架启动时，遍历所有的input
+	发现input有ref属性，取到ref的值是itemTitle
+	Vue中有个对象$refs,给$refs加个属性，属性名是itemTitle
+	vue框架给input加个blur事件，在用户输完信息后，得到input中的值
+	$refs.itemTitle.value="item5"
+	-->
+	<input ref="itemTitle">
+	<!-- v-on:click相当于@click -->
+	<button v-on:click="insert()">
+	insert
+	</button>
+	<!-- 数据绑定  v-for是由vue框架处理，先引入vue
+	数组中的数据一变，网页自动变
+	console options.data.items.push({title:"1"})
+	-->
+		<div v-for="item in items">
+		   <span>{{item.title}}</span>
+		   <!-- 根据参数删除 -->
+		   <span @click="remove(item.title)">删除</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+	var options = {
+		el : "#app",
+		data : {
+			items : [ {
+				title : "item1"
+			}, {
+				title : "item2"
+			} ]
+		},
+		methods : {
+			remove : function(param) {
+				console.log("remove");
+				//比较数组中那个商品的title与param一样
+				//this表示   options.data
+				for (var i=0;i<this.items.length;i++)
+					{
+					//取出当前这个
+					var item=this.items[i];
+					if (item.title==param)
+						{
+						//执行删除
+						this.items.splice(i,1);
+						}
+					}
+			},
+			insert:function()
+			{
+				//从框架中取值 
+				//this是vue当前对象      取出输入框中的主当前对象值
+				var itemTitle=this.$refs.itemTitle.value;
+				var item={title:itemTitle};
+				//data:{items}
+				//放入商品
+			   this.items.push(item);
+			}
+		}
+	};
+	var vue = new Vue(options);
+	//新建一个对象itemTitle
+	window.itemTitle=new Object();
+	//设置itemTitle的值时test2
+	window.itemTitle.value="test2";
+	//打印这个值
+	console.log(window.itemTitle.value)
+
+	var users=["a","b","c"];
+	//p1:从那开始删除数据
+	//p2:删除几个
+	users.splice(1,1);//删除b
+	users.splice(1,1);//删除c
+</script>
+</html>

@@ -1,0 +1,9 @@
+package jichu.com;
+
+
+
+public class LList {
+	public class Node{
+		
+	}
+}

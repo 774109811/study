@@ -1,0 +1,29 @@
+package day08_Guess;
+
+import day08_练习.GuessGame;
+
+public class GuessLetterGame extends GuessGame{
+
+	@Override
+	public String suiji() {
+		return "AASDS";
+	}
+
+	@Override
+	public void tishi() {
+		System.out.println("已经产生了随机字母");
+		System.out.println("猜猜");
+		
+	}
+
+	@Override
+	public String bijiao(String c, String r) {
+		return "2A2B";
+	}
+
+	@Override
+	public boolean caidui(String result) {
+		return "5A0B".equals(result);
+	}
+	
+}

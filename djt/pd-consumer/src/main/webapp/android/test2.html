@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function callAndroid(){
+		console.log("callAndroid()")
+		//viewById.addJavascriptInterface(phone,"androidPhoneObject");
+		window.androidPhoneObject.call();
+	}
+</script>
+</head>
+<body>
+	<button onclick="callAndroid()">call</button>
+</body>
+</html>
+
+
+
+

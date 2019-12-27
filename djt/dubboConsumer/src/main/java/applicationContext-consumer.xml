@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans.xsd 
+			http://code.alibabatech.com/schema/dubbo 
+			http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
+
+	<!--1，设置应用名 -->
+	<dubbo:application name="cart" />
+
+	<!--2，设置注册中心地址 -->
+	<dubbo:registry timeout="50000"
+		address="zookeeper://192.168.50.136:2181" />
+
+
+	<!-- controller @autowired spring从本项目找到一个实现类 LoginService loginService @autowired 
+		CartService cartService spring框架
+		发现CartService在配置文件中配置过 spring框架不找对象，
+		交给dubbo框架 
+		dubbo框架运行动态代理，用socket联接提供者， 
+		把接口名，方法名，参数发给提供者 提供者用反射运行方法，
+		把结果通过socket返回来
+		check=false 消费者启动时，不去检查提供者是否启动 
+		
+		-->
+
+	<dubbo:reference timeout="50000" check="false"
+		id="cartService" interface="com.tedu.dubboInterface.CartService" />
+</beans>

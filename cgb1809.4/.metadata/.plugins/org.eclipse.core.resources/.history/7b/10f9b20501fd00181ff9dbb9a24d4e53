@@ -1,0 +1,13 @@
+package com.test.dao;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.junit.Test;
+
+import com.test.TestBase;
+
+public class ProxyDao extends TestBase {
+	@Test
+	public void testProxyDao() {
+		ctx.getBean("sqlSessionFactory",SqlSessionFactory.class)
+	}
+}

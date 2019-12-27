@@ -1,0 +1,13 @@
+package day08_zuoye;
+
+import java.util.Random;
+
+public class Text2 {
+	public static void main(String[] args) {
+		int[]a=new int[23456];
+		int[]b=remove(a,2);
+		System.out.println(b);
+	}
+
+
+}

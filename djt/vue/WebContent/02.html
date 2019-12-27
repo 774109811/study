@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script type="text/javascript">
+	//定义类
+	function Vue(options) {
+		//获取数据item对象
+		var item=options.data.item;
+		var user=options.data.user
+		//获取id是app
+		var rootElement=options.el;
+		//获取document获取这个id元素值
+		var divObject=document.getElementById(rootElement);
+		//显示item.title获取手机
+		divObject.innerHTML=item.title;
+		//获取网页内容
+		divObject.innerHTML=user;
+	}
+	var options={
+			el:"app",
+			data:{
+				item:{
+					title:"手机"
+				},
+				user:"name"
+			}		
+	}
+	var vue=new Vue(options);
+</script>
+</html>

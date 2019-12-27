@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;dubboConsumer/src/main/java/4.applicationContext-consumer.xml&apos; to &apos;applicationContext-consumer.xml&apos;" description="Rename resource &apos;4.applicationContext-consumer.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/4.applicationContext-consumer.xml" name="applicationContext-consumer.xml" stamp="1555568508737" updateReferences="true"/>
+</session>

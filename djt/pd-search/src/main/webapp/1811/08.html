@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/axios.min.js"></script>
+<script type="text/javascript">
+	var options={
+			el:"#app",
+			mounted:function(){
+				//网页加载完成后,自动执行
+				var url="/api/getIndexItem.html";
+				//浏览器跨域访问 异步提交response 为提交后返回的结果
+				axios.get(url).then(function(response){
+					
+					console.log(response);
+					var serverData=response.data;
+					var items=serverData.data;
+					for(var i=0;i<items.length;i++){
+						console.log(items[i].title);
+					}
+				}).cach(function(e){
+					//异常信息
+					console.log(e);
+				});
+			}
+	}
+	
+	var vue = new Vue(options);
+</script>
+</head>
+<body>
+	<div id="app"></div>
+</body>
+
+</html>

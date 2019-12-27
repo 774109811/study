@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button @click="insert">insert</button>
+	<button @click="delete">delete</button>
+	<div id="app"></div>
+</body>
+<script type="text/javascript" src="jquery-3.1.1.min.js" />
+<script type="text/javascript">
+	function Vue(options) {
+		//获取根元素
+		var el = options.el;
+		var rootElement = document.getElementById(el);
+		//没隔100ms调用run
+		function run() {
+			//数据绑定
+			//清空旧数据
+			rootElement.innerHTML = "";
+			var items=options.data.items;
+			for (var i = 0; i < items.length; i++) {
+				var item=items[i];
+				rootElement.innerHTML=rootElement.innerHTML+item.title+"<br>";
+			}
+		}
+		window.setInterval(run, 100)
+		//事件绑定
+		//找到所有的button
+		//找到他的所有属性
+		//判断属性名是不是@click
+		//变量options
+		
+		
+	}
+</script>
+</html>

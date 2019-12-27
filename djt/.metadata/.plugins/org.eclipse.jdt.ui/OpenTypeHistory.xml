@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=jt-manage/src\/main\/java&lt;com.jt.manage.service{UserService.java[UserService" modifiers="513" timestamp="1551859872837"/>
+<typeInfo handle="=jt-manage/src\/main\/java&lt;com.jt.manage.service{FileService.java[FileService" modifiers="513" timestamp="1552116410137"/>
+<typeInfo handle="=jt-web/src\/main\/java&lt;com.jt.web.service{CartService.java[CartService" modifiers="513" timestamp="1553486925010"/>
+<typeInfo handle="=jt-order/src\/main\/java&lt;com.jt.order.service{OrderServiceImpl.java[OrderServiceImpl" modifiers="1" timestamp="1553568404851"/>
+<typeInfo handle="=jt-common/C:\/repository\/org\/springframework\/spring-web\/4.1.3.RELEASE\/spring-web-4.1.3.RELEASE.jar&lt;org.springframework.web.client(RestTemplate.class[RestTemplate" modifiers="33" timestamp="1557449434811"/>
+</typeInfoHistroy>

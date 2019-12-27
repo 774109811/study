@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 点击函数 -->
+<button onclick="insert()">insert</button>
+
+<div id="app"></div>
+</body>
+<script type="text/javascript">
+	//实现点击更新数据
+	//定义类
+	function Vue(options) {
+	//获取id元素
+		var el=options.el;
+		var id=document.getElementById(el);
+		function run() {
+			console.log("run")
+			//获取商品信息
+			var items=options.data.items;
+			id.innerHTML="";
+			//遍历数组
+			for (var i = 0; i < items.length; i++) {
+				{
+					var title=items[i].title;
+					//获取页面信息和商品title
+					id.innerHTML=id.innerHTML+title+"<br>"	
+				}	
+			}
+		}
+		//毫秒执行
+		window.setInterval(run,100);
+	}
+	//新建一个参数这个参数一般从后台查出来的数据
+	//el为标签里的id元素
+	var options={
+			el:"app",
+			data:{
+				items:[
+					{title:"item1"},{title:"item2"}
+					]
+				}
+			
+	}
+	//把这个参数交给对象函数
+	var vue=new Vue(options);
+	function insert() {
+		{
+			//定义一个新的商品
+			var item={title:"新商品"}
+			//获取长度 items [0] [1] [2]
+			var length=options.data.items.length;
+			//向数组添加新的商品
+			options.data.items[length]=item;
+		}
+	}
+	
+	
+	
+	//options.data.items.push({title:'a'})在页面改变会自动改变
+</script>
+</html>

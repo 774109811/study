@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/vue.js"></script>
+
+<script type="text/javascript" src="../js/axios.min.js"></script>
+</head>
+<body>
+	<div class="container" id="app">
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="../images/mobileImage/banner.png" class="img-responsive">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6" v-for="item in items">
+				<a v-bind:href="item.detailUrl"> 
+				<img v-bind:src="item.image"/>
+					<br/> <span>{{item.title}}</span>
+					<br/> <span>{{item.price}}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+var options={
+		el:"#app",
+		data:{items:[
+		             {title:"item1",price:9},
+		             {title:"item2",price:98}
+		             ]
+		      },
+		 mounted:function()
+		 {
+			//连别人的服务器加http://ip
+			 var url="/api/getIndexItem.html";
+		      axios.get(url)
+		      .then(function(res){
+		    	  console.log(res);
+		    	  //res有6个属性，controller的数据在data中
+		    	  var serverData=res.data;
+		    	  //serverData有三个属性，status,msg,data
+		    	  var items=serverData.data;
+		    	  //能给items数组中的对象加个属性detailUrl
+		    	  //<a v-bind:href=item.detailUrl>
+		    	  for (var i=0;i<items.length;i++){
+		    		  var item=items[i];
+		    		  //动态添加属性
+		    		  //?传参数，接收时也用itemId
+		    		  item.detailUrl="detail.html?itemId="+item.id;
+		    	  //不要把item放到数组中。
+		    	  }
+		    	  //把items放到vue框架配置对象data属性中
+		    	 //this.vue.items是配置对象options.data.items
+		    	 //不用写data
+		    	 //options.data中的属性，用vue.直接引用
+		    	  this.vue.items=items;
+		      })
+		      .catch(function(e){
+		    	  console.log("联网出错了");
+		    	  console.log(e);
+		      });
+		 }
+}
+var vue=new Vue(options);
+</script>
+</html>
+
+
+
+
+

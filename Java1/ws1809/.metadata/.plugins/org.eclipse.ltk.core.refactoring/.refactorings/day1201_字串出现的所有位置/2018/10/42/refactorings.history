@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;list&apos; from expression &apos;new ArrayList&lt;&gt;()&apos;&#x0D;&#x0A;- Original project: &apos;day1201_字串出现的所有位置&apos;&#x0D;&#x0A;- Variable name: &apos;list&apos;&#x0D;&#x0A;- Destination method: &apos;day1202_ArrayList.Text2.find()&apos;&#x0D;&#x0A;- Variable expression: &apos;new ArrayList&lt;&gt;()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;list&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;day1202_ArrayList{Text2.java" name="list" replace="true" selection="507 0" stamp="1539865614548" version="1.0"/>
+</session>

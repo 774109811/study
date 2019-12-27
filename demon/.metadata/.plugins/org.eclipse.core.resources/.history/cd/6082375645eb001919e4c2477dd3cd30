@@ -1,0 +1,11 @@
+package shuZuTest;
+
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+
+public class Test {
+	public static void main(String[] args) {
+		String [][] a =new String[][] {{"1","2"},{"3","4"},{},{}};
+		System.out.println(Arrays.toString(a));
+	}
+}

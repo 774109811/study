@@ -1,0 +1,9 @@
+package taobao;
+
+public class Tcontroller extends Tservice{
+	@Override
+	public void find() {
+		// TODO Auto-generated method stub
+		super.find();
+	}
+}

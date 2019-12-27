@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+src="../js/vue.js"
+></script>
+
+<script type="text/javascript"
+src="../js/axios.min.js"
+></script>
+<script type="text/javascript">
+var options={
+		el:"#app",
+		mounted:function(){
+			console.log("跨域访问")
+			//网页加载完后，自动执行
+			var url="http://192.168.12.48/api/getIndexItem.html"
+			//连自己的服务器不用加域名
+			//var url="/api/getIndexItem.html";
+			axios.get(url)
+			.then(function(response){
+				console.log(response);
+				//response有6个属性，5个属性是vue加的
+				var serverData=response.data;
+				//serverData是controller返回的数据
+				//有3个属性分别是status,msg,data
+				var items=serverData.data;
+				for (var i=0;i<items.length;i++)
+					{
+					console.log(items[i].title);
+					}
+			})
+			.catch(function(e){
+				console.log(e);
+			}					
+			);
+		}
+}
+var vue=new Vue(options);
+//http://www.pd.com/1811/08.html
+</script>
+</head>
+<body>
+<div id="app">
+</div>
+</body>
+</html>
